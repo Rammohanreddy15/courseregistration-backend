@@ -2,8 +2,8 @@ const express = require("express");
 const app = express();
 const cors = require('cors');
 const jwt = require("jsonwebtoken");
-const { admin, course } = require("../db"); 
-const { jwtsecret } = require("../config");
+const { admin, course } = require("../backend/db"); 
+const { jwtsecret } = require("../backend/config");
 
 app.use(cors({ origin: 'http://localhost:5173' }));
 app.use(express.json());
